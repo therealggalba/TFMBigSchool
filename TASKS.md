@@ -3,7 +3,7 @@ Este documento desglosa el desarrollo de chatsHub en tareas diminutas. Instrucci
 FASE 1: El Lienzo en Blanco
 Objetivo: Tener el proyecto creado y limpio, sin ruido.
 
-[ ] Tarea 1.1: Crear el proyecto
+[x] Tarea 1.1: Crear el proyecto
 Descripción: Generar la carpeta del proyecto con Next.js (tfmv1, TypeScript, ESLint, App Router, src/, no Tailwind).
 
 Prompt para la IA:
