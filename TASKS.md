@@ -15,7 +15,7 @@ Descripción: Borrar el contenido por defecto de Next.js para tener una pantalla
 
 Prompt para la IA:
 
-"Borra todo el contenido de src/app/page.tsx y déjalo solo con un div que diga '<h1>ChatsHub - Inicio</h1>'. Limpia también los estilos por defecto en src/app/globals.css manteniendo solo las directivas de Tailwind."
+"Borra todo el contenido de src/app/page.tsx y déjalo solo con un div que diga '<h1>TFMv1 - Inicio</h1>'. Limpia también los estilos por defecto en src/app/globals.css manteniendo solo las directivas de Tailwind."
 
 [ ] Tarea 1.3: Instalar Shadcn/UI (Librería de Diseño)
 Descripción: Configurar la base de los componentes visuales.

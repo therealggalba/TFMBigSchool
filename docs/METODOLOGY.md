@@ -161,4 +161,22 @@ Validar en cada nueva pantalla:
 \## 7. Diseño UX
 \* \*\*Estilo\*\*: Utilizaremos un método modularizado con .scss dividiendo distintos sectores de
 nuestro proyecto. No se utilizará tailwind, sino css básico.
+\* \*\*Colores\*\*: Se utilizará esta paleta de colores:
+\* #6BFA9A (Verde)
+\* #FAA92F (Naranja)
+\* #8E23FA (Morado)
+\* #8C71A7 (Lila)
+\* #4E7A5D (Verde oscuro)
+\* #806F55 (Marrón)
+\* #FFFFFF (Blanco)
+\* #000000 (Negro)
+\* \*\*Tipografía\*\*: Se utilizará la fuente "Inter" para todo el proyecto.
+\* \*\*Elementos\*\*: Los distintos elementos de la interfaz se diseñarán con un estilo moderno y minimalista, con un borde redondeado y un color de fondo que contraste con el color de texto:
+\* Botones
+\* Inputs
+\* Cards
+\* Barra de navegación
+\* Chats
+\* Mensajes
+\* \*\*Responsive\*\*: El diseño será responsive y se adaptará a distintos tamaños de pantalla.
 
