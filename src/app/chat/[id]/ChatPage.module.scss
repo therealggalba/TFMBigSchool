@@ -1,0 +1,174 @@
+@use '@/styles/variables.scss' as *;
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.leftColumn {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+  border-right: 1px solid rgba($color-black, 0.05);
+  position: relative;
+}
+
+.largeAvatarContainer {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  
+  .fullAvatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+}
+
+.sidebarIdentity {
+  padding: 25px;
+  background: linear-gradient(to top, rgba($color-purple, 0.9), rgba($color-purple, 0));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: $color-white;
+  text-align: left;
+
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+
+  p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.9;
+    margin: 5px 0 0;
+  }
+}
+
+.mainContentArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 70px;
+  background-color: $color-white;
+  border-bottom: 1px solid rgba($color-black, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  z-index: 10;
+
+  .headerProfile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .miniAvatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid rgba($color-purple, 0.1);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .headerInfo {
+      h1 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin: 0;
+        color: $color-black;
+      }
+      span {
+        font-size: 0.75rem;
+        color: $color-lila;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+      }
+    }
+  }
+}
+
+.headerBackButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: $color-purple;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: $transition-smooth;
+  flex-direction: row-reverse;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transform: translateX(4px);
+  }
+}
+
+.columnsWrapper {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  overflow: hidden;
+}
+
+.centerColumn {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  position: relative;
+  border-right: 1px solid rgba($color-black, 0.05);
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba($color-white, 0.5);
+}
+
+.placeholder {
+  flex: 1;
+  border-radius: $border-radius-md;
+  background-color: rgba($color-brown, 0.03);
+  border: 2px dashed rgba($color-brown, 0.1);
+}
+
+.loading, .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: $color-purple;
+}
+
+.error {
+  color: #ff4d4f;
+}

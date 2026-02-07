@@ -15,7 +15,7 @@ Descripción: Borrar el contenido por defecto de Next.js para tener una pantalla
 
 Prompt para la IA:
 
-"Borra todo el contenido de src/app/page.tsx y déjalo solo con un div que diga '<h1>TFMv1 - Inicio</h1>'. Limpia también los estilos por defecto en src/app/globals.css manteniendo solo las directivas de Tailwind."
+"Borra todo el contenido de src/app/page.tsx y déjalo solo con un div que diga '<h1>TFMv1 - Inicio</h1>'. Limpia también los estilos por defecto en src/app/globals.css para prepararlos para SCSS."
 
 [ ] Tarea 1.3: Instalar Shadcn/UI (Librería de Diseño)
 Descripción: Configurar la base de los componentes visuales.
@@ -99,23 +99,20 @@ Prompt para la IA:
 FASE 5: IA Real
 Objetivo: Conectar el cerebro real.
 
-[ ] Tarea 5.1: Configurar Vercel AI SDK
-Descripción: Instalar las herramientas de IA reales.
+[x] Tarea 5.1: Configurar Vercel AI SDK
+Descripción: Instalar las herramientas de IA reales (@mlc-ai/web-llm para ejecución local).
 
-Prompt para la IA:
+[x] Tarea 5.2: Crear el flujo de Personalidades
+Descripción: Sistema de prompts y persistencia en IndexedDB.
 
-"Instala la librería ai de Vercel y @ai-sdk/openai. Crea un archivo .env.local y dime qué variable de entorno necesito poner para mi clave de API de OpenAI."
+[x] Tarea 5.3: Optimización Global y UI
+Descripción: Carga global de LLM, PersonaSkeleton, y refinamiento estético de 3 columnas.
 
-[ ] Tarea 5.2: Crear la API Route
-Descripción: El puente entre tu chat y OpenAI.
+---
 
-Prompt para la IA:
-
-"Crea una ruta de API en src/app/api/chat/route.ts. Debe usar streamText del AI SDK para reenviar los mensajes a OpenAI y devolver la respuesta en streaming."
-
-[ ] Tarea 5.3: Conectar Frontend a Backend
-Descripción: Sustituir la IA falsa por la real.
-
-Prompt para la IA:
-
-"Sustituye la función de Mock en page.tsx por el hook useChat de la librería ai/react. Configúralo para que, al recibir nuevos trozos de texto (streaming), vaya actualizando la vista."
+### HITOS COMPLETADOS (IA Assisted - 2026-02-07)
+- **Fase 6**: Prevención de Alucinaciones. Implementación de una política de rigor intelectual universal.
+- **Fase 7**: Rediseño del Layout. Header dinámico y sidebar de alto impacto.
+- **Fase 8**: Expansión del Catálogo. Integración de la persona de Rosalía (Experta Musical).
+- **Fase 9**: Robustez del Sistema. Prevención de duplicados mediante sembrado idempotente y subida de versión de DB (v2).
+- **Fase 10**: Humanización Avanzada. Erradicación absoluta de asteriscos en la comunicación.

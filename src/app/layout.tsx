@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   description: "Master Thesis Project - Local LLM Dialogue",
 };
 
+import { WebLLMProviderContext } from "@/lib/contexts/web-llm-context";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -20,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={inter.variable}>
-        {children}
+        <WebLLMProviderContext>
+          {children}
+        </WebLLMProviderContext>
       </body>
     </html>
   );
